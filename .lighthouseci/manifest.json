@@ -1,0 +1,38 @@
+[
+  {
+    "url": "http://localhost:36171/about.html",
+    "isRepresentativeRun": true,
+    "htmlPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-about_html-2026_10_06_08_47_51.report.html",
+    "jsonPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-about_html-2026_10_06_08_47_51.report.json",
+    "summary": {
+      "performance": 0.99,
+      "accessibility": 0.94,
+      "best-practices": 0.96,
+      "seo": 1
+    }
+  },
+  {
+    "url": "http://localhost:36171/contact.html",
+    "isRepresentativeRun": true,
+    "htmlPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-contact_html-2026_10_06_08_48_04.report.html",
+    "jsonPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-contact_html-2026_10_06_08_48_04.report.json",
+    "summary": {
+      "performance": 1,
+      "accessibility": 0.95,
+      "best-practices": 0.96,
+      "seo": 1
+    }
+  },
+  {
+    "url": "http://localhost:36171/index.html",
+    "isRepresentativeRun": true,
+    "htmlPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-index_html-2026_10_06_08_48_15.report.html",
+    "jsonPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-index_html-2026_10_06_08_48_15.report.json",
+    "summary": {
+      "performance": 1,
+      "accessibility": 0.94,
+      "best-practices": 0.96,
+      "seo": 1
+    }
+  }
+]

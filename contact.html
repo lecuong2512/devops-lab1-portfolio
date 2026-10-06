@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trang liên hệ - DevOps Lab 1 Portfolio">
+    <title>Liên hệ — DevOps Lab 1</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #2d3748;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 16px;
+            padding: 40px;
+            max-width: 620px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #edf2f7;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 600;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: all 0.2s ease;
+            font-size: 14px;
+        }
+        .nav a:hover {
+            color: #5a67d8;
+            background: #ebf4ff;
+        }
+        .nav a.active {
+            color: white;
+            background: #5a67d8;
+        }
+        .avatar-wrapper {
+            margin-bottom: 16px;
+        }
+        .avatar {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #667eea;
+            box-shadow: 0 4px 14px rgba(102, 126, 234, 0.4);
+        }
+        h1 { color: #5a67d8; margin-bottom: 8px; font-size: 30px; }
+        h2 { color: #6b46c1; margin-bottom: 20px; font-size: 17px; font-weight: normal; }
+        .info { background: #f7fafc; border-radius: 8px; padding: 20px; margin: 16px 0; text-align: left; }
+        .info p { margin: 10px 0; }
+        .info a { color: #5a67d8; text-decoration: none; font-weight: 600; }
+        .info a:hover { text-decoration: underline; }
+        .form-group {
+            margin-bottom: 12px;
+            text-align: left;
+        }
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: #4a5568;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px 14px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            font-size: 14px;
+            font-family: inherit;
+        }
+        .form-control:focus {
+            outline: none;
+            border-color: #5a67d8;
+        }
+        .btn-submit {
+            background: #5a67d8;
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background 0.2s;
+            width: 100%;
+            margin-top: 8px;
+        }
+        .btn-submit:hover {
+            background: #4c51bf;
+        }
+        .footer { margin-top: 24px; font-size: 13px; color: #718096; }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <!-- Navigation Menu -->
+        <nav class="nav" aria-label="Thanh điều hướng">
+            <a href="index.html">Trang chủ</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="contact.html" class="active">Liên hệ</a>
+        </nav>
+
+        <!-- Avatar -->
+        <div class="avatar-wrapper">
+            <img src="avatar.png" alt="Ảnh đại diện Lê Việt Cường" class="avatar" width="96" height="96">
+        </div>
+
+        <h1>Liên Hệ</h1>
+        <h2>Kết nối & Chia sẻ đam mê Công nghệ</h2>
+
+        <div class="info">
+            <p><strong>GitHub:</strong> <a href="https://github.com/lecuong2512" target="_blank" rel="noopener noreferrer">github.com/lecuong2512</a></p>
+            <p><strong>Website:</strong> <a href="https://lecuong2512.github.io/devops-lab1-portfolio/" target="_blank" rel="noopener noreferrer">lecuong2512.github.io/devops-lab1-portfolio</a></p>
+            <p><strong>Trạng thái:</strong> Sẵn sàng học hỏi, kết nối và hợp tác dự án DevOps!</p>
+        </div>
+
+        <form onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã để lại lời nhắn!');" style="margin-top: 20px;">
+            <div class="form-group">
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" class="form-control" placeholder="Nhập tên của bạn" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="example@email.com" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Lời nhắn</label>
+                <textarea id="message" class="form-control" rows="3" placeholder="Nội dung liên hệ..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Gửi lời nhắn</button>
+        </form>
+
+        <footer class="footer">
+            <p>Trang đa trang (Multi-page) — DevOps Lab 1 Portfolio</p>
+        </footer>
+    </main>
+</body>
+</html>
