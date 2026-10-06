@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DevOps Lab 1 Portfolio - Website cá nhân tích hợp CI/CD Pipeline với GitHub Actions và Lighthouse CI">
-    <title>DevOps Lab 1 — My Portfolio</title>
+    <meta name="description" content="Trang giới thiệu bản thân - Lê Việt Cường - DevOps Lab 1 Portfolio">
+    <title>Giới thiệu — DevOps Lab 1</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -65,7 +65,7 @@
         h1 { color: #5a67d8; margin-bottom: 8px; font-size: 30px; }
         h2 { color: #6b46c1; margin-bottom: 20px; font-size: 17px; font-weight: normal; }
         .info { background: #f7fafc; border-radius: 8px; padding: 20px; margin: 16px 0; text-align: left; }
-        .info p { margin: 8px 0; }
+        .info p { margin: 10px 0; line-height: 1.6; }
         .badge {
             display: inline-block;
             background: #5a67d8;
@@ -76,15 +76,14 @@
             margin: 4px;
         }
         .footer { margin-top: 24px; font-size: 13px; color: #718096; }
-        .status { color: #276749; font-weight: bold; }
     </style>
 </head>
 <body>
     <main class="container">
         <!-- Navigation Menu -->
         <nav class="nav" aria-label="Thanh điều hướng">
-            <a href="index.html" class="active">Trang chủ</a>
-            <a href="about.html">Giới thiệu</a>
+            <a href="index.html">Trang chủ</a>
+            <a href="about.html" class="active">Giới thiệu</a>
             <a href="contact.html">Liên hệ</a>
         </nav>
 
@@ -93,35 +92,26 @@
             <img src="avatar.png" alt="Ảnh đại diện Lê Việt Cường" class="avatar" width="96" height="96">
         </div>
 
-        <h1>Xin chào, DevOps!</h1>
-        <h2>Lab 1 — Website đã được cập nhật tự động!</h2>
+        <h1>Về Tôi</h1>
+        <h2>Lê Việt Cường — DevOps & Software Engineering</h2>
 
         <div class="info">
-            <p><strong>Bài học:</strong> DevOps Lab 1 — Tổng quan</p>
-            <p><strong>Deploy bởi:</strong> GitHub Actions CI/CD Pipeline</p>
-            <p><strong>Ngày deploy:</strong> <span id="date"></span></p>
-            <p><strong>Pipeline status:</strong> <span class="status">Automated</span></p>
-            <p><strong>Lighthouse CI:</strong> <span class="status">Integrated & Audited</span></p>
+            <p><strong>Họ và tên:</strong> Lê Việt Cường</p>
+            <p><strong>Học phần:</strong> Vận hành & Bảo trì Phần mềm (DevOps 2026)</p>
+            <p><strong>Mục tiêu học tập:</strong> Làm chủ văn hóa và quy trình DevOps thực chiến, tự động hóa toàn diện từ khâu viết code, kiểm thử, tích hợp liên tục (CI) đến triển khai tự động (CD) và giám sát hệ thống.</p>
+            <p><strong>Kỹ năng chính:</strong> Git Version Control, GitHub Actions CI/CD, Linux Server, Docker Containerization, HTML5/CSS3/JavaScript.</p>
         </div>
 
         <div>
-            <span class="badge">HTML5</span>
-            <span class="badge">CSS3</span>
-            <span class="badge">Git</span>
-            <span class="badge">GitHub Actions</span>
-            <span class="badge">CI/CD</span>
-            <span class="badge">DevOps</span>
-            <span class="badge">Lighthouse CI</span>
+            <span class="badge">DevOps Engineer</span>
+            <span class="badge">CI/CD Automation</span>
+            <span class="badge">Cloud Native</span>
+            <span class="badge">Continuous Delivery</span>
         </div>
 
         <footer class="footer">
-            <p>Deployed automatically via GitHub Actions Pipeline</p>
-            <p>Push code → CI Build → Lighthouse Audit → Auto Deploy → Live!</p>
+            <p>Trang đa trang (Multi-page) — DevOps Lab 1 Portfolio</p>
         </footer>
     </main>
-
-    <script>
-        document.getElementById('date').textContent = new Date().toLocaleDateString('vi-VN');
-    </script>
 </body>
 </html>

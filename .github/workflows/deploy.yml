@@ -1,6 +1,6 @@
 # ============================================================
 # DevOps Lab 1 — CI/CD Pipeline với GitHub Actions
-# Tự động deploy website lên GitHub Pages mỗi khi push code
+# Tự động kiểm tra, audit Lighthouse và deploy website lên GitHub Pages
 # ============================================================
 
 name: Deploy to GitHub Pages
@@ -16,7 +16,7 @@ permissions:
 
 # === Các job trong pipeline ===
 jobs:
-  # Job 1: Build & Deploy
+  # Job: Build, Audit & Deploy
   build-and-deploy:
     runs-on: ubuntu-latest   # Chạy trên máy ảo Ubuntu (free)
 
@@ -25,23 +25,32 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # Step 2: Kiểm tra HTML cơ bản
-      - name: Validate HTML
+      # Step 2: Kiểm tra cấu trúc các trang HTML và ảnh Avatar
+      - name: Validate Multi-page HTML & Assets
         run: |
-          echo "Checking index.html exists..."
-          if [ -f "index.html" ]; then
-            echo "index.html found!"
-            echo "File size: $(wc -c < index.html) bytes"
-          else
-            echo "❌ index.html NOT found!"
-            exit 1
-          fi
+          echo "Checking HTML pages and assets exist..."
+          for file in index.html about.html contact.html avatar.png; do
+            if [ -f "$file" ]; then
+              echo "✅ $file found! (Size: $(wc -c < "$file") bytes)"
+            else
+              echo "❌ $file NOT found!"
+              exit 1
+            fi
+          done
 
-      # Step 3: Deploy lên GitHub Pages
+      # Step 3: Google Lighthouse CI Audit (Performance, Accessibility, SEO)
+      - name: Audit with Lighthouse CI
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+        continue-on-error: true
+
+      # Step 4: Deploy lên GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh-pages
-          commit_message: "Auto-deploy from CI pipeline"
+          commit_message: "Auto-deploy multi-page portfolio from CI pipeline"
