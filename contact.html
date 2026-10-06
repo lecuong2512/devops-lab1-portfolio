@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Trang liên hệ - DevOps Lab 1 Portfolio">
     <title>Liên hệ — DevOps Lab 1</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="avatar.png">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -18,7 +20,7 @@
             padding: 20px;
         }
         .container {
-            background: white;
+            background: #ffffff;
             border-radius: 16px;
             padding: 40px;
             max-width: 620px;
@@ -36,7 +38,7 @@
         }
         .nav a {
             text-decoration: none;
-            color: #4a5568;
+            color: #2d3748;
             font-weight: 600;
             padding: 8px 16px;
             border-radius: 8px;
@@ -44,12 +46,12 @@
             font-size: 14px;
         }
         .nav a:hover {
-            color: #5a67d8;
+            color: #434190;
             background: #ebf4ff;
         }
         .nav a.active {
-            color: white;
-            background: #5a67d8;
+            color: #ffffff;
+            background: #434190;
         }
         .avatar-wrapper {
             margin-bottom: 16px;
@@ -62,40 +64,42 @@
             border: 4px solid #667eea;
             box-shadow: 0 4px 14px rgba(102, 126, 234, 0.4);
         }
-        h1 { color: #5a67d8; margin-bottom: 8px; font-size: 30px; }
-        h2 { color: #6b46c1; margin-bottom: 20px; font-size: 17px; font-weight: normal; }
+        h1 { color: #3c366b; margin-bottom: 8px; font-size: 30px; }
+        h2 { color: #553c9a; margin-bottom: 20px; font-size: 17px; font-weight: normal; }
         .info { background: #f7fafc; border-radius: 8px; padding: 20px; margin: 16px 0; text-align: left; }
-        .info p { margin: 10px 0; }
-        .info a { color: #5a67d8; text-decoration: none; font-weight: 600; }
-        .info a:hover { text-decoration: underline; }
+        .info p { margin: 10px 0; color: #2d3748; }
+        .info a { color: #3c366b; text-decoration: underline; font-weight: 600; }
+        .info a:hover { color: #434190; }
         .form-group {
-            margin-bottom: 12px;
+            margin-bottom: 14px;
             text-align: left;
         }
         .form-group label {
             display: block;
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 600;
-            margin-bottom: 4px;
-            color: #4a5568;
+            margin-bottom: 6px;
+            color: #2d3748;
         }
         .form-control {
             width: 100%;
             padding: 10px 14px;
             border-radius: 8px;
-            border: 1px solid #e2e8f0;
+            border: 1px solid #cbd5e0;
             font-size: 14px;
             font-family: inherit;
+            color: #2d3748;
         }
         .form-control:focus {
             outline: none;
-            border-color: #5a67d8;
+            border-color: #434190;
+            box-shadow: 0 0 0 2px rgba(67, 65, 144, 0.2);
         }
         .btn-submit {
-            background: #5a67d8;
-            color: white;
+            background: #434190;
+            color: #ffffff;
             border: none;
-            padding: 10px 24px;
+            padding: 12px 24px;
             border-radius: 8px;
             font-weight: 600;
             font-size: 14px;
@@ -105,9 +109,9 @@
             margin-top: 8px;
         }
         .btn-submit:hover {
-            background: #4c51bf;
+            background: #322659;
         }
-        .footer { margin-top: 24px; font-size: 13px; color: #718096; }
+        .footer { margin-top: 24px; font-size: 13px; color: #4a5568; }
     </style>
 </head>
 <body>
@@ -136,15 +140,15 @@
         <form onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã để lại lời nhắn!');" style="margin-top: 20px;">
             <div class="form-group">
                 <label for="name">Họ và tên</label>
-                <input type="text" id="name" class="form-control" placeholder="Nhập tên của bạn" required>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Nhập tên của bạn" required>
             </div>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="example@email.com" required>
+                <input type="email" id="email" name="email" class="form-control" placeholder="example@email.com" required>
             </div>
             <div class="form-group">
                 <label for="message">Lời nhắn</label>
-                <textarea id="message" class="form-control" rows="3" placeholder="Nội dung liên hệ..." required></textarea>
+                <textarea id="message" name="message" class="form-control" rows="3" placeholder="Nội dung liên hệ..." required></textarea>
             </div>
             <button type="submit" class="btn-submit">Gửi lời nhắn</button>
         </form>

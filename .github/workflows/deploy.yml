@@ -29,7 +29,7 @@ jobs:
       - name: Validate Multi-page HTML & Assets
         run: |
           echo "Checking HTML pages and assets exist..."
-          for file in index.html about.html contact.html avatar.png; do
+          for file in index.html about.html contact.html avatar.png favicon.ico; do
             if [ -f "$file" ]; then
               echo "✅ $file found! (Size: $(wc -c < "$file") bytes)"
             else
