@@ -1,5 +1,5 @@
 {
-  "http://localhost:37041/about.html": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1791277145993-73439.report.html",
-  "http://localhost:37041/contact.html": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1791277146544-35135.report.html",
-  "http://localhost:37041/index.html": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1791277147231-22687.report.html"
+  "http://localhost:34753/about.html": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1791279365369-56692.report.html",
+  "http://localhost:34753/contact.html": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1791279365692-69466.report.html",
+  "http://localhost:34753/index.html": "https://storage.googleapis.com/lighthouse-infrastructure.appspot.com/reports/1791279366117-66228.report.html"
 }
