@@ -1,0 +1,8 @@
+Họ và tên: Lê Việt Cường
+Mã số sinh viên (MSSV): 
+Lớp / Khóa: 
+Học phần: Vận hành & Bảo trì Phần mềm (DevOps 2026)
+Bài thực hành: Lab 1 — Trải nghiệm DevOps Workflow End-to-End
+GitHub Repository: https://github.com/lecuong2512/devops-lab1-portfolio
+GitHub Pages Live URL: https://lecuong2512.github.io/devops-lab1-portfolio/
+Thời gian hoàn thành: 2026-10-06
