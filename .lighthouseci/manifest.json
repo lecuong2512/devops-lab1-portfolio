@@ -1,9 +1,9 @@
 [
   {
-    "url": "http://localhost:34753/about.html",
+    "url": "http://localhost:33529/about.html",
     "isRepresentativeRun": true,
-    "htmlPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-about_html-2026_10_06_09_35_31.report.html",
-    "jsonPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-about_html-2026_10_06_09_35_31.report.json",
+    "htmlPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-about_html-2026_10_13_06_06_47.report.html",
+    "jsonPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-about_html-2026_10_13_06_06_47.report.json",
     "summary": {
       "performance": 1,
       "accessibility": 1,
@@ -12,10 +12,10 @@
     }
   },
   {
-    "url": "http://localhost:34753/contact.html",
+    "url": "http://localhost:33529/contact.html",
     "isRepresentativeRun": true,
-    "htmlPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-contact_html-2026_10_06_09_35_44.report.html",
-    "jsonPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-contact_html-2026_10_06_09_35_44.report.json",
+    "htmlPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-contact_html-2026_10_13_06_06_59.report.html",
+    "jsonPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-contact_html-2026_10_13_06_06_59.report.json",
     "summary": {
       "performance": 1,
       "accessibility": 1,
@@ -24,10 +24,10 @@
     }
   },
   {
-    "url": "http://localhost:34753/index.html",
+    "url": "http://localhost:33529/index.html",
     "isRepresentativeRun": true,
-    "htmlPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-index_html-2026_10_06_09_35_54.report.html",
-    "jsonPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-index_html-2026_10_06_09_35_54.report.json",
+    "htmlPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-index_html-2026_10_13_06_07_10.report.html",
+    "jsonPath": "/home/runner/work/devops-lab1-portfolio/devops-lab1-portfolio/.lighthouseci/localhost-index_html-2026_10_13_06_07_10.report.json",
     "summary": {
       "performance": 1,
       "accessibility": 1,
